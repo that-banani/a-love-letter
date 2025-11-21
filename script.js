@@ -31,8 +31,17 @@ const loveLetters = [
     'You are loved. Always.'
 ];
 
+const signatures = [
+    'Nani ♥',
+    'Jonny ♥',
+    'Jonathan ♥',
+    'JRFB ♥',
+    'O amor da sua vida ♥'
+]
+
 function updateLTitle() {
     document.getElementById('ltitle').innerHTML = loveLetters[Math.floor(Math.random() * 100) % loveLetters.length];
+    document.getElementById('lsignature').innerHTML = signatures[Math.floor(Math.random() * 100) % signatures.length];
 }
 
 setInterval(updateLTitle, 5000)
